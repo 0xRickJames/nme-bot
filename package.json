@@ -1,0 +1,29 @@
+{
+  "name": "discord-rpg-bot",
+  "version": "3.0.0",
+  "description": "A discord RPG bot with battles, bossfights, leveling, equipment and more!",
+  "main": "prod/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node -r dotenv/config ./prod/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.6.3",
+    "@discordjs/rest": "^1.7.1",
+    "common-tags": "^1.8.2",
+    "discord-api-types": "^0.37.41",
+    "discord.js": "^14.10.2",
+    "dotenv": "^16.0.3",
+    "lodash.clonedeep": "^4.5.0",
+    "mongoose": "^7.1.0",
+    "random-js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/common-tags": "^1.8.1",
+    "@types/lodash.clonedeep": "^4.5.7",
+    "@types/node": "^18.16.3",
+    "typescript": "^5.0.4"
+  }
+}
