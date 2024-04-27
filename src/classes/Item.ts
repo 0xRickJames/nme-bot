@@ -44,6 +44,7 @@ export class HolyWater extends Item {
   boostCritDam = 2;
   price = 50;
   levelReq = 2;
+  imageUrl = "https://nme-bot-images.vercel.app/images/items/holy_water.png";
 }
 
 export class LifeTotem extends Item {
@@ -52,6 +53,7 @@ export class LifeTotem extends Item {
   boostHp = 333;
   price = 100;
   levelReq = 2;
+  imageUrl = "https://nme-bot-images.vercel.app/images/items/life_totem.png";
 }
 
 export class RegenRing extends Item {
@@ -60,6 +62,7 @@ export class RegenRing extends Item {
   regen = 20;
   price = 50;
   levelReq = 4;
+  imageUrl = "https://nme-bot-images.vercel.app/images/items/regen_ring.png";
 }
 
 export class PoisonVial extends Item {
@@ -68,4 +71,5 @@ export class PoisonVial extends Item {
   poisons = 5;
   price = 50;
   levelReq = 4;
+  imageUrl = "https://nme-bot-images.vercel.app/images/items/poison_vial.png";
 }

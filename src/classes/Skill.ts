@@ -107,8 +107,7 @@ export class Disarm extends Skill {
   price = 75;
   levelReq = 3;
   description = "Removes a weapon from opponent";
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157380482632273950/disarm.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/skills/disarm.png";
   fighters: any;
   playerDiedText: any;
   onFighterDead: any;
@@ -154,8 +153,7 @@ export class Vaporize extends Skill {
   name = "Vaporize";
   id = "vaporize";
   description = "Removes any armor/weapons, and deals massive damage";
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157385788758167595/vaporize.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/skills/vaporize.png";
   interceptRate = 0.5;
   fighters: any;
   playerDiedText: any;
@@ -220,7 +218,7 @@ export class CombatTactics extends Skill {
   price = 20;
   description = "Doubles Attack and Armor";
   imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157384538004140072/combat_tactics.png";
+    "https://nme-bot-images.vercel.app/images/skills/combat_tactics.png";
 
   use(p1: Fighter, p2: Fighter) {
     p1.attack *= 2;
@@ -253,8 +251,7 @@ export class StunAttack extends Skill {
   id = "stun_attack";
   price = 20;
   description = "Debuffs opponents Attack and Armor 90%";
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157384537765060608/stun_attack.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/skills/stun_attack.png";
 
   use(p1: Fighter, p2: Fighter) {
     p2.attack /= 10;
@@ -340,8 +337,7 @@ export class Wrath extends Skill {
   playerDiedText: any;
   onFighterDead: any;
   msg: any;
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157385789072736337/wrath.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/skills/wrath.png";
 
   use(p1: Fighter, p2: Fighter) {
     const attackRate = 1000;
@@ -390,9 +386,8 @@ export class Demoralize extends Skill {
   id = "demoralize";
   price = 75;
   levelReq = 3;
-  description = "Removes a skill  from opponent";
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1040067949307887696/demoralize.png";
+  description = "Removes an opponent's skill";
+  imageUrl = "https://nme-bot-images.vercel.app/images/skills/demoralize.png";
   fighters: any;
   playerDiedText: any;
   onFighterDead: any;
@@ -448,8 +443,7 @@ export class NoSkill extends Skill {
   name = "No Skill";
   id = "no_skill";
   description = "Lack of a skill";
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1040074437774561390/noskill.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/skills/no_skill.png";
 
   use(p1: Fighter) {
     const embed = new EmbedBuilder()

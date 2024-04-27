@@ -12,8 +12,8 @@ import { getUserData } from "../modules/getUserData";
 
 const allowedAllies = 12;
 const loopData = new SlashCommandBuilder()
-  .setName("house_laristar")
-  .setDescription("Fight against House Laristar!");
+  .setName("the_demon")
+  .setDescription("Fight against The Demon!");
 
 for (let i = 1; i <= allowedAllies; i++) {
   loopData.addUserOption((option) =>
@@ -24,7 +24,7 @@ for (let i = 1; i <= allowedAllies; i++) {
   );
 }
 
-export const house_laristar: Command = {
+export const the_demon: Command = {
   data: loopData,
 
   run: async (interaction: ChatInputCommandInteraction) => {
@@ -55,7 +55,7 @@ export const house_laristar: Command = {
       (id) => allies.find((obj) => obj.id === id)
     ) as Fighter[];
 
-    const boss = await powerUpCheckBoss("house_laristar");
+    const boss = await powerUpCheckBoss("the_demon");
     const [exp, gold] = [boss!.exp!, boss!.gold!].map(
       (val) => (val / oppMultiplier).toFixed(0) as unknown as number
     );

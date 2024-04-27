@@ -1,13 +1,13 @@
 export async function checkPlayerLevel(level: number, item: string) {
   if (
-    item == "epic_armor" ||
-    "epic_helmet" ||
-    "epic_gloves" ||
-    "epic_boots" ||
-    "gale_longsword" ||
-    "molten_greataxe" ||
-    "tidal_trident" ||
-    "gaia_battlehammer" ||
+    item == "steel_breastplate" ||
+    "steel_helm" ||
+    "steel_gauntlets" ||
+    "steel_greaves" ||
+    "steel_longsword" ||
+    "steel_greataxe" ||
+    "heavy_crossbow" ||
+    "musket_rifle" ||
     "feeblemind" ||
     "divine_intervention" ||
     "disarm" ||
@@ -28,52 +28,52 @@ export async function checkPlayerLevel(level: number, item: string) {
 }
 export async function checkItemLevel(item: string) {
   switch (item) {
-    case "epic_armor": {
+    case "steel_breastplate": {
       return true;
     }
-    case "epic_helmet": {
+    case "steel_helm": {
       return true;
     }
-    case "epic_boots": {
+    case "steel_greaves": {
       return true;
     }
-    case "epic_gloves": {
+    case "steel_gauntlets": {
       return true;
     }
-    case "rare_armor": {
+    case "leather_cuirass": {
       return false;
     }
-    case "rare_helmet": {
+    case "leather_helmet": {
       return false;
     }
-    case "rare_boots": {
+    case "leather_boots": {
       return false;
     }
-    case "rare_gloves": {
+    case "leather_gloves": {
       return false;
     }
-    case "gale_shortsword": {
+    case "steel_dagger": {
       return false;
     }
-    case "tidal_spear": {
+    case "hand_crossbow": {
       return false;
     }
-    case "molten_axe": {
+    case "steel_mace": {
       return false;
     }
-    case "gaia_mace": {
+    case "musket_pistol": {
       return false;
     }
-    case "gale_longsword": {
+    case "steel_longsword": {
       return true;
     }
-    case "tidal_trident": {
+    case "heavy_crossbow": {
       return true;
     }
-    case "molten_greataxe": {
+    case "steel_greataxe": {
       return true;
     }
-    case "gaia_battlehammer": {
+    case "musket_rifle": {
       return true;
     }
     case "fireball": {
@@ -119,53 +119,53 @@ export async function checkItemLevel(item: string) {
 }
 export async function checkName(item: string) {
   switch (item) {
-    case "epic_armor": {
-      return "Epic Armor" as string;
+    case "steel_breastplate": {
+      return "Steel Breastplate" as string;
     }
-    case "epic_helmet": {
-      return "Epic Helmet" as string;
+    case "steel_helm": {
+      return "Steel Helm" as string;
     }
-    case "epic_boots": {
-      return "Epic Boots" as string;
+    case "steel_greaves": {
+      return "Steel Boots" as string;
     }
-    case "epic_gloves": {
-      return "Epic Gloves" as string;
+    case "steel_gauntlets": {
+      return "Steel Gauntlets" as string;
     }
-    case "rare_armor": {
-      return "Rare Armor" as string;
+    case "leather_cuirass": {
+      return "Leather Cuirass" as string;
     }
-    case "rare_helmet": {
-      return "Rare Helmet" as string;
+    case "leather_helmet": {
+      return "Leather Helmet" as string;
     }
-    case "rare_boots": {
-      return "Rare Boots" as string;
+    case "leather_boots": {
+      return "Leather Boots" as string;
     }
-    case "rare_gloves": {
-      return "Rare Gloves" as string;
+    case "leather_gloves": {
+      return "Leather Gloves" as string;
     }
-    case "gale_shortsword": {
-      return "Gale Shortsword" as string;
+    case "steel_dagger": {
+      return "Steel Dagger" as string;
     }
-    case "tidal_spear": {
-      return "Tidal Spear" as string;
+    case "hand_crossbow": {
+      return "Hand Crossbow" as string;
     }
-    case "molten_axe": {
-      return "Molten Axe" as string;
+    case "steel_mace": {
+      return "Steel Mace" as string;
     }
-    case "gaia_mace": {
-      return "Gaia Mace" as string;
+    case "musket_pistol": {
+      return "Musket Pistol" as string;
     }
-    case "gale_longsword": {
-      return "Gale Longsword" as string;
+    case "steel_longsword": {
+      return "Steel Longsword" as string;
     }
-    case "tidal_trident": {
-      return "Tidal Trident" as string;
+    case "heavy_crossbow": {
+      return "Heavy Crossbow" as string;
     }
-    case "molten_greataxe": {
-      return "Molten Greataxe" as string;
+    case "steel_greataxe": {
+      return "Steel Greataxe" as string;
     }
-    case "gaia_battlehammer": {
-      return "Gaia Battlehammer" as string;
+    case "musket_rifle": {
+      return "Musket Rifle" as string;
     }
     case "fireball": {
       return "Fireball" as string;

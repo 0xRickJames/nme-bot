@@ -48,63 +48,68 @@ export abstract class Armor extends Base {
   }
 }
 
-export class RareArmor extends Armor {
-  name = "Rare Armor";
-  id = "rare_armor";
+export class LeatherCuirass extends Armor {
+  name = "Leather Cuirass";
+  id = "leather_cuirass";
   armor = 0.2;
   price = 40;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_chest_rare.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/armor/leather_cuirass.png";
 }
-export class RareHelmet extends Armor {
-  name = "Rare Helmet";
-  id = "rare_helmet";
+export class LeatherHelmet extends Armor {
+  name = "Leather Helmet";
+  id = "leather_helmet";
   price = 20;
   armor = 0.1;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_helm_epic.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/armor/leather_helmet.png";
 }
-export class RareBoots extends Armor {
-  name = "Rare Boots";
-  id = "rare_boots";
+export class LeatherBoots extends Armor {
+  name = "Leather Boots";
+  id = "leather_boots";
   price = 14;
   armor = 0.07;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_legs_rare.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/armor/leather_boots.png";
 }
-export class RareGloves extends Armor {
-  name = "Rare Gloves";
-  id = "rare_gloves";
+export class LeatherGloves extends Armor {
+  name = "Leather Gloves";
+  id = "leather_gloves";
   price = 10;
   armor = 0.05;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_hands_rare.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/armor/leather_gloves.png";
 }
-export class EpicArmor extends Armor {
-  name = "Epic Armor";
-  id = "epic_armor";
+export class SteelBreastplate extends Armor {
+  name = "Steel Breastplate";
+  id = "steel_breastplate";
   armor = 0.3;
   price = 60;
   levelReq = 3;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_chest_epic.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/armor/steel_breastplate.png";
 }
-export class EpicHelmet extends Armor {
-  name = "Epic Helmet";
-  id = "epic_helmet";
+export class SteelHelm extends Armor {
+  name = "Steel Helm";
+  id = "steel_helm";
   armor = 0.15;
   price = 30;
   levelReq = 3;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_helm_epic.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/armor/steel_helm.png";
 }
-export class EpicBoots extends Armor {
-  name = "Epic Boots";
-  id = "epic_boots";
+export class SteelGreaves extends Armor {
+  name = "Steel Greaves";
+  id = "steel_greaves";
   armor = 0.1;
   price = 20;
   levelReq = 3;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_legs_epic.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/armor/steel_greaves.png";
 }
-export class EpicGloves extends Armor {
-  name = "Epic Gloves";
-  id = "epic_gloves";
+export class SteelGauntlets extends Armor {
+  name = "Steel Gauntlets";
+  id = "steel_gauntlets";
   armor = 0.08;
   price = 16;
   levelReq = 3;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/ice_hands_epic.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/armor/steel_gauntlets.png";
 }

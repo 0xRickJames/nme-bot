@@ -12,8 +12,8 @@ import { getUserData } from "../modules/getUserData";
 
 const allowedAllies = 12;
 const loopData = new SlashCommandBuilder()
-  .setName("full_meta_alchemist")
-  .setDescription("Fight against Full Meta Alchemist!");
+  .setName("the_angel")
+  .setDescription("Fight against The Angel!");
 
 for (let i = 1; i <= allowedAllies; i++) {
   loopData.addUserOption((option) =>
@@ -24,7 +24,7 @@ for (let i = 1; i <= allowedAllies; i++) {
   );
 }
 
-export const full_meta_alchemist: Command = {
+export const the_angel: Command = {
   data: loopData,
 
   run: async (interaction: ChatInputCommandInteraction) => {
@@ -55,7 +55,7 @@ export const full_meta_alchemist: Command = {
       (id) => allies.find((obj) => obj.id === id)
     ) as Fighter[];
 
-    const boss = await powerUpCheckBoss("full_meta_alchemist");
+    const boss = await powerUpCheckBoss("the_angel");
     const [exp, gold] = [boss!.exp!, boss!.gold!].map(
       (val) => (val / oppMultiplier).toFixed(0) as unknown as number
     );

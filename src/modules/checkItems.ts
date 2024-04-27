@@ -16,12 +16,12 @@ export async function checkArmor(user: UserInt, armor: string) {
 
 export async function checkWeapons(user: UserInt, armor: string) {
   if (
-    (user.equippedWeapons.includes("gale_longsword") &&
-      armor == "gale_shortsword") ||
-    (user.equippedArmors.includes("tidal_trident") && armor == "tidal_spear") ||
-    (user.equippedArmors.includes("molten_greataxe") &&
-      armor == "molten_axe") ||
-    (user.equippedArmors.includes("gaia_battlehammer") && armor == "gaia_mace")
+    (user.equippedWeapons.includes("steel_longsword") &&
+      armor == "steel_dagger") ||
+    (user.equippedArmors.includes("heavy_crossbow") &&
+      armor == "hand_crossbow") ||
+    (user.equippedArmors.includes("steel_greataxe") && armor == "steel_mace") ||
+    (user.equippedArmors.includes("musket_rifle") && armor == "musket_pistol")
   ) {
     return true;
   } else {

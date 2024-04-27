@@ -15,8 +15,8 @@ export const bossprofile: Command = {
           { name: "Warrior", value: "warrior" },
           { name: "Battlemage", value: "battlemage" },
           { name: "Shaman", value: "shaman" },
-          { name: "House Laristar", value: "house_laristar" },
-          { name: "Full Meta Alchemist", value: "full_meta_alchemist" }
+          { name: "The Angel", value: "the_angel" },
+          { name: "The Demon", value: "the_demon" }
         )
     ),
 

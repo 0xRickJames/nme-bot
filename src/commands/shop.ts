@@ -11,27 +11,27 @@ import { Command } from "../interfaces/Command";
 export const shop: Command = {
   data: new SlashCommandBuilder()
     .setName("shop")
-    .setDescription("Displays what House Laristar has to offer!"),
+    .setDescription("Displays what The Merchant has to offer!"),
 
   run: async (interaction) => {
     const embed = new EmbedBuilder()
-      .setTitle("House Laristar's Market")
+      .setTitle("The Merchant's Market")
       .setDescription(
         "No more than one of each Weapon or Armor piece. No more than one Skill or Spell at a time!"
       )
       .setColor(BROWN)
-      .setThumbnail("https://www.loot-heroes-dev.lol/img/models/angel.png")
+      .setThumbnail("https://nme-bot-images.vercel.app/images/shop.png")
       .addFields(
         {
           name: "🛡Armor🛡",
           value:
-            "-**Rare Armor:** +20% damage reduction - **40 Gold**\n-**Rare Boots:** +7% damage reduction - **14 Gold**\n-**Rare Helmet:** +10% damage reduction - **20 Gold**\n-**Rare Gloves:** +5% damage reduction - **10 Gold**\n-**Epic Armor:** +30% damage reduction - **60 Gold** - level > 3\n-**Epic Boots:** +10% damage reduction - **20 Gold** - level > 3\n-**Epic Helmet:** +15% damage reduction - **30 Gold** - level > 3\n-**Epic Gloves:** +8% damage reduction - **16 Gold** - level > 3",
+            "-**Leather Cuirass:** +20% damage reduction - **40 Gold**\n-**Leather Boots:** +7% damage reduction - **14 Gold**\n-**Leather Helmet:** +10% damage reduction - **20 Gold**\n-**Leather Gloves:** +5% damage reduction - **10 Gold**\n-**Steel Breastplate:** +30% damage reduction - **60 Gold** - level > 3\n-**Steel Boots:** +10% damage reduction - **20 Gold** - level > 3\n-**Steel Helm:** +15% damage reduction - **30 Gold** - level > 3\n-**Steel Gauntlets:** +8% damage reduction - **16 Gold** - level > 3",
           inline: false,
         },
         {
           name: "🗡Weapons🗡",
           value:
-            "-**Gale Shortsword:** +5 to damage - **12 Gold**\n-**Tidal Spear:** +10 to damage - **25 Gold**\n-**Molten Axe:** +20 to damage - **50 Gold**\n-**Gaia Mace:** +50 to damage - **125 Gold**\n-**Gale Longsword:** +10 to damage - **25 Gold** - level > 3\n-**Tidal Trident:** +20 to damage - **50 Gold** - level > 3\n-**Molten Greataxe:** +40 to damage - **100 Gold** - level > 3\n-**Gaia Battlehammer:** +100 to damage - **225 Gold** - level > 3",
+            "-**Steel Dagger:** +5 to damage - **12 Gold**\n-**Hand Crossbow:** +10 to damage - **25 Gold**\n-**Steel Mace:** +20 to damage - **50 Gold**\n-**Musket Pistol:** +50 to damage - **125 Gold**\n-**Steel Longsword:** +10 to damage - **25 Gold** - level > 3\n-**Heavy Crossbow:** +20 to damage - **50 Gold** - level > 3\n-**Steel Greataxe:** +40 to damage - **100 Gold** - level > 3\n-**Musket Rifle:** +100 to damage - **225 Gold** - level > 3",
           inline: false,
         },
         {

@@ -46,14 +46,14 @@ export const buy: Command = {
             .setDescription("piece of armor")
             .setRequired(true)
             .addChoices(
-              { name: "Rare Armor", value: "rare_armor" },
-              { name: "Rare Helmet", value: "rare_helmet" },
-              { name: "Rare Boots", value: "rare_boots" },
-              { name: "Rare Gloves", value: "rare_gloves" },
-              { name: "Epic Armor", value: "epic_armor" },
-              { name: "Epic Helmet", value: "epic_helmet" },
-              { name: "Epic Boots", value: "epic_boots" },
-              { name: "Epic Gloves", value: "epic_gloves" }
+              { name: "Leather Cuirass", value: "leather_cuirass" },
+              { name: "Leather Helmet", value: "leather_helmet" },
+              { name: "Leather Boots", value: "leather_boots" },
+              { name: "Leather Gloves", value: "leather_gloves" },
+              { name: "Steel Breastplate", value: "steel_breastplate" },
+              { name: "Steel Helm", value: "steel_helm" },
+              { name: "Steel Boots", value: "steel_greaves" },
+              { name: "Steel Gauntlets", value: "steel_gauntlets" }
             )
         )
     )
@@ -67,14 +67,14 @@ export const buy: Command = {
             .setDescription("type of weapon")
             .setRequired(true)
             .addChoices(
-              { name: "Gale Shortsword", value: "gale_shortsword" },
-              { name: "Tidal Spear", value: "tidal_spear" },
-              { name: "Molten Axe", value: "molten_axe" },
-              { name: "Rockegt Launcher", value: "gaia_mace" },
-              { name: "Gale Longsword", value: "gale_longsword" },
-              { name: "Tidal Trident", value: "tidal_trident" },
-              { name: "Molten Greataxe", value: "molten_greataxe" },
-              { name: "Gaia Battlehammer", value: "gaia_battlehammer" }
+              { name: "Steel Dagger", value: "steel_dagger" },
+              { name: "Hand Crossbow", value: "hand_crossbow" },
+              { name: "Steel Mace", value: "steel_mace" },
+              { name: "Rockegt Launcher", value: "musket_pistol" },
+              { name: "Steel Longsword", value: "steel_longsword" },
+              { name: "Heavy Crossbow", value: "heavy_crossbow" },
+              { name: "Steel Greataxe", value: "steel_greataxe" },
+              { name: "Musket Rifle", value: "musket_rifle" }
             )
         )
     )

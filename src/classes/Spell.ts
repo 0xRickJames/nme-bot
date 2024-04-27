@@ -84,7 +84,11 @@ export abstract class Spell extends Base {
             inline: true,
           },
           { name: "Attack", value: inlineCode(this.attack), inline: true },
-          { name: "Special", value: "Removes other spellss!", inline: true }
+          {
+            name: "Special",
+            value: "Removes an opponents spell!",
+            inline: true,
+          }
         );
 
       if (this.imageUrl) embed.setThumbnail(this.imageUrl);
@@ -225,8 +229,7 @@ export class Fireball extends Spell {
   attack = 25;
   interceptRate = 0.2;
   price = 20;
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157377014257422346/fireball.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/spells/fireball.png";
 }
 export class Heal extends Spell {
   name = "Heal";
@@ -235,16 +238,14 @@ export class Heal extends Spell {
   attack = 0;
   interceptRate = 0.2;
   price = 20;
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157377014802690058/heal.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/spells/healing.png";
 }
 export class Feeblemind extends Spell {
   name = "Feeblemind";
   id = "feeblemind";
   attack = 10;
   interceptRate = 0.2;
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157378723570536448/feeblemind.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/spells/feeblemind.png";
   canEat = true;
   price = 75;
   levelReq = 3;
@@ -256,7 +257,7 @@ export class DivineIntervention extends Spell {
   attack = 0;
   interceptRate = 0.2;
   imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157378723310481489/divine_intervention.png";
+    "https://nme-bot-images.vercel.app/images/spells/divine_intervention.png";
   stealsArmor = true;
   price = 75;
   levelReq = 3;
@@ -294,8 +295,7 @@ export class Doom extends Spell {
   attack = 500;
   healing = 0;
   interceptRate = 0.5;
-  imageURL =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157387002572984350/doom.png";
+  imageURL = "https://nme-bot-images.vercel.app/images/spells/doom.png";
   canEat = true;
 }
 export class Smite extends Spell {
@@ -304,6 +304,5 @@ export class Smite extends Spell {
   attack = 300;
   interceptRate = 0.5;
   canEat = true;
-  imageUrl =
-    "https://cdn.discordapp.com/attachments/939309405227339776/1157387002929479760/smite.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/spells/smite.png";
 }

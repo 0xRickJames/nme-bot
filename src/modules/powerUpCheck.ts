@@ -17,15 +17,15 @@ export async function powerUpCheckBoss(boss_name: string) {
       boss.attack = 20;
       boss.critChance = 0.4;
       boss.imageUrl =
-        "https://metadata.lootheroes.io/common/hero/warriorSoldier-square.png";
-      const tidal_spear = new weapons.TidalSpear();
-      const gale_shortsword = new weapons.GaleShortsword();
-      const rare_helmet = new armors.RareHelmet();
-      const rare_boots = new armors.RareBoots();
-      boss.equipWeapon(tidal_spear);
-      boss.equipWeapon(gale_shortsword);
-      boss.equipArmor(rare_helmet);
-      boss.equipArmor(rare_boots);
+        "https://nme-bot-images.vercel.app/images/bosses/warrior.png";
+      const hand_crossbow = new weapons.HandCrossbow();
+      const steel_dagger = new weapons.SteelDagger();
+      const leather_helmet = new armors.LeatherHelmet();
+      const leather_boots = new armors.LeatherBoots();
+      boss.equipWeapon(hand_crossbow);
+      boss.equipWeapon(steel_dagger);
+      boss.equipArmor(leather_helmet);
+      boss.equipArmor(leather_boots);
       boss.exp = 100;
       boss.gold = 35;
       return boss;
@@ -37,19 +37,19 @@ export async function powerUpCheckBoss(boss_name: string) {
       boss.armor = 0.3;
       boss.critChance = 0.4;
       boss.imageUrl =
-        "https://metadata.lootheroes.io/common/hero/battlemageSoldier-square.png";
-      const tidal_spear = new weapons.TidalSpear();
-      const gale_shortsword = new weapons.GaleShortsword();
-      boss.equipWeapon(tidal_spear);
-      boss.equipWeapon(gale_shortsword);
-      const rare_helmet = new armors.RareHelmet();
-      const rare_boots = new armors.RareBoots();
-      const rare_gloves = new armors.RareGloves();
-      const rare_armor = new armors.RareArmor();
-      boss.equipArmor(rare_helmet);
-      boss.equipArmor(rare_boots);
-      boss.equipArmor(rare_armor);
-      boss.equipArmor(rare_gloves);
+        "https://nme-bot-images.vercel.app/images/bosses/battlemage.png";
+      const hand_crossbow = new weapons.HandCrossbow();
+      const steel_dagger = new weapons.SteelDagger();
+      boss.equipWeapon(hand_crossbow);
+      boss.equipWeapon(steel_dagger);
+      const leather_helmet = new armors.LeatherHelmet();
+      const leather_boots = new armors.LeatherBoots();
+      const leather_gloves = new armors.LeatherGloves();
+      const leather_cuirass = new armors.LeatherCuirass();
+      boss.equipArmor(leather_helmet);
+      boss.equipArmor(leather_boots);
+      boss.equipArmor(leather_cuirass);
+      boss.equipArmor(leather_gloves);
       const heal = new spells.Heal();
       heal.setOwner(boss);
       boss.skill = new skills.CombatTactics();
@@ -65,23 +65,23 @@ export async function powerUpCheckBoss(boss_name: string) {
       boss.armor = 0.3;
       boss.critChance = 0.4;
       boss.imageUrl =
-        "https://metadata.lootheroes.io/common/hero/shamanKnight-square.png";
-      const tidal_spear = new weapons.TidalSpear();
-      const gale_shortsword = new weapons.GaleShortsword();
-      const molten_axe = new weapons.MoltenAxe();
-      const gaia_mace = new weapons.GaiaMace();
-      boss.equipWeapon(tidal_spear);
-      boss.equipWeapon(gale_shortsword);
-      boss.equipWeapon(molten_axe);
-      boss.equipWeapon(gaia_mace);
-      const rare_helmet = new armors.RareHelmet();
-      const rare_boots = new armors.RareBoots();
-      const rare_gloves = new armors.RareGloves();
-      const rare_armor = new armors.RareArmor();
-      boss.equipArmor(rare_helmet);
-      boss.equipArmor(rare_boots);
-      boss.equipArmor(rare_armor);
-      boss.equipArmor(rare_gloves);
+        "https://nme-bot-images.vercel.app/images/bosses/shaman.png";
+      const hand_crossbow = new weapons.HandCrossbow();
+      const steel_dagger = new weapons.SteelDagger();
+      const steel_mace = new weapons.SteelMace();
+      const musket_pistol = new weapons.MusketPistol();
+      boss.equipWeapon(hand_crossbow);
+      boss.equipWeapon(steel_dagger);
+      boss.equipWeapon(steel_mace);
+      boss.equipWeapon(musket_pistol);
+      const leather_helmet = new armors.LeatherHelmet();
+      const leather_boots = new armors.LeatherBoots();
+      const leather_gloves = new armors.LeatherGloves();
+      const leather_cuirass = new armors.LeatherCuirass();
+      boss.equipArmor(leather_helmet);
+      boss.equipArmor(leather_boots);
+      boss.equipArmor(leather_cuirass);
+      boss.equipArmor(leather_gloves);
       const fireball = new spells.Fireball();
       fireball.setOwner(boss);
       boss.skill = new skills.CombatTactics();
@@ -90,30 +90,30 @@ export async function powerUpCheckBoss(boss_name: string) {
 
       return boss;
     }
-    case "house_laristar": {
-      const boss = new Fighter("House Laristar");
+    case "the_angel": {
+      const boss = new Fighter("The Angel");
       boss.hp = 3000;
       boss.attack = 100;
       boss.armor = 0.37;
       boss.critChance = 0.4;
       boss.imageUrl =
-        "https://metadata.lootheroes.io/common/hero/archangelLord-square.png";
-      const tidal_trident = new weapons.TidalTrident();
-      const molten_greataxe = new weapons.MoltenGreataxe();
-      const gaia_mace = new weapons.GaiaMace();
-      const gaia_battlehammer = new weapons.GaiaBattlehammer();
-      boss.equipWeapon(tidal_trident);
-      boss.equipWeapon(molten_greataxe);
-      boss.equipWeapon(gaia_mace);
-      boss.equipWeapon(gaia_battlehammer);
-      const epic_helmet = new armors.EpicHelmet();
-      const epic_boots = new armors.EpicBoots();
-      const epic_gloves = new armors.EpicGloves();
-      const epic_armor = new armors.EpicArmor();
-      boss.equipArmor(epic_helmet);
-      boss.equipArmor(epic_boots);
-      boss.equipArmor(epic_armor);
-      boss.equipArmor(epic_gloves);
+        "https://nme-bot-images.vercel.app/images/bosses/angel.png";
+      const heavy_crossbow = new weapons.HeavyCrossbow();
+      const steel_greataxe = new weapons.SteelGreataxe();
+      const musket_pistol = new weapons.MusketPistol();
+      const musket_rifle = new weapons.MusketRifle();
+      boss.equipWeapon(heavy_crossbow);
+      boss.equipWeapon(steel_greataxe);
+      boss.equipWeapon(musket_pistol);
+      boss.equipWeapon(musket_rifle);
+      const steel_helm = new armors.SteelHelm();
+      const steel_greaves = new armors.SteelGreaves();
+      const steel_gauntlets = new armors.SteelGauntlets();
+      const steel_breastplate = new armors.SteelBreastplate();
+      boss.equipArmor(steel_helm);
+      boss.equipArmor(steel_greaves);
+      boss.equipArmor(steel_breastplate);
+      boss.equipArmor(steel_gauntlets);
       const smite = new spells.Smite();
       smite.setOwner(boss);
       boss.skill = new skills.Wrath();
@@ -122,38 +122,38 @@ export async function powerUpCheckBoss(boss_name: string) {
 
       return boss;
     }
-    case "full_meta_alchemist": {
-      const boss = new Fighter("Full Meta Alchemist");
+    case "the_demon": {
+      const boss = new Fighter("The Demon");
       boss.hp = 6000;
       boss.attack = 200;
       boss.armor = 0.5;
       boss.critChance = 0.4;
       boss.imageUrl =
-        "https://metadata.lootheroes.io/common/hero/necromancerLord-square.png";
-      const tidal_trident = new weapons.TidalTrident();
-      const gale_longsword = new weapons.GaleLongsword();
-      const molten_greataxe = new weapons.MoltenGreataxe();
-      const gaia_battlehammer = new weapons.GaiaBattlehammer();
-      boss.equipWeapon(tidal_trident);
-      boss.equipWeapon(gale_longsword);
-      boss.equipWeapon(molten_greataxe);
-      boss.equipWeapon(gaia_battlehammer);
-      const tidal_spear = new weapons.TidalSpear();
-      const gale_shortsword = new weapons.GaleShortsword();
-      const molten_axe = new weapons.MoltenAxe();
-      const gaia_mace = new weapons.GaiaMace();
-      boss.equipWeapon(tidal_spear);
-      boss.equipWeapon(gale_shortsword);
-      boss.equipWeapon(molten_axe);
-      boss.equipWeapon(gaia_mace);
-      const epic_helmet = new armors.EpicHelmet();
-      const epic_boots = new armors.EpicBoots();
-      const epic_gloves = new armors.EpicGloves();
-      const epic_armor = new armors.EpicArmor();
-      boss.equipArmor(epic_helmet);
-      boss.equipArmor(epic_boots);
-      boss.equipArmor(epic_armor);
-      boss.equipArmor(epic_gloves);
+        "https://nme-bot-images.vercel.app/images/bosses/demon.png";
+      const heavy_crossbow = new weapons.HeavyCrossbow();
+      const steel_longsword = new weapons.SteelLongsword();
+      const steel_greataxe = new weapons.SteelGreataxe();
+      const musket_rifle = new weapons.MusketRifle();
+      boss.equipWeapon(heavy_crossbow);
+      boss.equipWeapon(steel_longsword);
+      boss.equipWeapon(steel_greataxe);
+      boss.equipWeapon(musket_rifle);
+      const hand_crossbow = new weapons.HandCrossbow();
+      const steel_dagger = new weapons.SteelDagger();
+      const steel_mace = new weapons.SteelMace();
+      const musket_pistol = new weapons.MusketPistol();
+      boss.equipWeapon(hand_crossbow);
+      boss.equipWeapon(steel_dagger);
+      boss.equipWeapon(steel_mace);
+      boss.equipWeapon(musket_pistol);
+      const steel_helm = new armors.SteelHelm();
+      const steel_greaves = new armors.SteelGreaves();
+      const steel_gauntlets = new armors.SteelGauntlets();
+      const steel_breastplate = new armors.SteelBreastplate();
+      boss.equipArmor(steel_helm);
+      boss.equipArmor(steel_greaves);
+      boss.equipArmor(steel_breastplate);
+      boss.equipArmor(steel_gauntlets);
       const doom = new spells.Doom();
       doom.setOwner(boss);
       boss.skill = new skills.Vaporize();
@@ -199,64 +199,64 @@ export async function powerUpCheck(player: GuildMember, userint: string) {
 export async function skillsSpellsArmsCheck(fighter: Fighter, user: UserInt) {
   //  Armor Check
 
-  if (user.equippedArmors.includes("epic_armor")) {
-    const epic_armor = new armors.EpicArmor();
-    fighter.equipArmor(epic_armor);
-  } else if (user.equippedArmors.includes("rare_armor")) {
-    const rare_armor = new armors.RareArmor();
-    fighter.equipArmor(rare_armor);
+  if (user.equippedArmors.includes("steel_breastplate")) {
+    const steel_breastplate = new armors.SteelBreastplate();
+    fighter.equipArmor(steel_breastplate);
+  } else if (user.equippedArmors.includes("leather_cuirass")) {
+    const leather_cuirass = new armors.LeatherCuirass();
+    fighter.equipArmor(leather_cuirass);
   }
-  if (user.equippedArmors.includes("epic_helmet")) {
-    const epic_helmet = new armors.EpicHelmet();
-    fighter.equipArmor(epic_helmet);
-  } else if (user.equippedArmors.includes("rare_helmet")) {
-    const rare_helmet = new armors.RareHelmet();
-    fighter.equipArmor(rare_helmet);
+  if (user.equippedArmors.includes("steel_helm")) {
+    const steel_helm = new armors.SteelHelm();
+    fighter.equipArmor(steel_helm);
+  } else if (user.equippedArmors.includes("leather_helmet")) {
+    const leather_helmet = new armors.LeatherHelmet();
+    fighter.equipArmor(leather_helmet);
   }
-  if (user.equippedArmors.includes("epic_boots")) {
-    const epic_boots = new armors.EpicBoots();
-    fighter.equipArmor(epic_boots);
-  } else if (user.equippedArmors.includes("rare_boots")) {
-    const rare_boots = new armors.RareBoots();
-    fighter.equipArmor(rare_boots);
+  if (user.equippedArmors.includes("steel_greaves")) {
+    const steel_greaves = new armors.SteelGreaves();
+    fighter.equipArmor(steel_greaves);
+  } else if (user.equippedArmors.includes("leather_boots")) {
+    const leather_boots = new armors.LeatherBoots();
+    fighter.equipArmor(leather_boots);
   }
-  if (user.equippedArmors.includes("epic_gloves")) {
-    const epic_gloves = new armors.EpicGloves();
-    fighter.equipArmor(epic_gloves);
-  } else if (user.equippedArmors.includes("rare_gloves")) {
-    const rare_gloves = new armors.RareGloves();
-    fighter.equipArmor(rare_gloves);
+  if (user.equippedArmors.includes("steel_gauntlets")) {
+    const steel_gauntlets = new armors.SteelGauntlets();
+    fighter.equipArmor(steel_gauntlets);
+  } else if (user.equippedArmors.includes("leather_gloves")) {
+    const leather_gloves = new armors.LeatherGloves();
+    fighter.equipArmor(leather_gloves);
   }
 
   // Weapons check
 
-  if (user.equippedWeapons.includes("tidal_trident")) {
-    const tidal_trident = new weapons.TidalTrident();
-    fighter.equipWeapon(tidal_trident);
-  } else if (user.equippedWeapons.includes("tidal_spear")) {
-    const tidal_spear = new weapons.TidalSpear();
-    fighter.equipWeapon(tidal_spear);
+  if (user.equippedWeapons.includes("heavy_crossbow")) {
+    const heavy_crossbow = new weapons.HeavyCrossbow();
+    fighter.equipWeapon(heavy_crossbow);
+  } else if (user.equippedWeapons.includes("hand_crossbow")) {
+    const hand_crossbow = new weapons.HandCrossbow();
+    fighter.equipWeapon(hand_crossbow);
   }
-  if (user.equippedWeapons.includes("molten_greataxe")) {
-    const molten_greataxe = new weapons.MoltenGreataxe();
-    fighter.equipWeapon(molten_greataxe);
-  } else if (user.equippedWeapons.includes("molten_axe")) {
-    const molten_axe = new weapons.MoltenAxe();
-    fighter.equipWeapon(molten_axe);
+  if (user.equippedWeapons.includes("steel_greataxe")) {
+    const steel_greataxe = new weapons.SteelGreataxe();
+    fighter.equipWeapon(steel_greataxe);
+  } else if (user.equippedWeapons.includes("steel_mace")) {
+    const steel_mace = new weapons.SteelMace();
+    fighter.equipWeapon(steel_mace);
   }
-  if (user.equippedWeapons.includes("gaia_battlehammer")) {
-    const gaia_battlehammer = new weapons.GaiaBattlehammer();
-    fighter.equipWeapon(gaia_battlehammer);
-  } else if (user.equippedWeapons.includes("gaia_mace")) {
-    const gaia_mace = new weapons.GaiaMace();
-    fighter.equipWeapon(gaia_mace);
+  if (user.equippedWeapons.includes("musket_rifle")) {
+    const musket_rifle = new weapons.MusketRifle();
+    fighter.equipWeapon(musket_rifle);
+  } else if (user.equippedWeapons.includes("musket_pistol")) {
+    const musket_pistol = new weapons.MusketPistol();
+    fighter.equipWeapon(musket_pistol);
   }
-  if (user.equippedWeapons.includes("gale_longsword")) {
-    const gale_longsword = new weapons.GaleLongsword();
-    fighter.equipWeapon(gale_longsword);
-  } else if (user.equippedWeapons.includes("gale_shortsword")) {
-    const gale_shortsword = new weapons.GaleShortsword();
-    fighter.equipWeapon(gale_shortsword);
+  if (user.equippedWeapons.includes("steel_longsword")) {
+    const steel_longsword = new weapons.SteelLongsword();
+    fighter.equipWeapon(steel_longsword);
+  } else if (user.equippedWeapons.includes("steel_dagger")) {
+    const steel_dagger = new weapons.SteelDagger();
+    fighter.equipWeapon(steel_dagger);
   }
 
   // Item Check

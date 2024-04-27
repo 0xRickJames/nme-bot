@@ -33,35 +33,35 @@ export async function getPrice(Item: string) {
       price = 10;
       return price;
     }
-    case "gale_shortsword": {
+    case "steel_dagger": {
       price = 12;
       return price;
     }
-    case "tidal_spear": {
+    case "hand_crossbow": {
       price = 25;
       return price;
     }
-    case "molten_axe": {
+    case "steel_mace": {
       price = 50;
       return price;
     }
-    case "gaia_mace": {
+    case "musket_pistol": {
       price = 125;
       return price;
     }
-    case "gale_longsword": {
+    case "steel_longsword": {
       price = 25;
       return price;
     }
-    case "tidal_trident": {
+    case "heavy_crossbow": {
       price = 50;
       return price;
     }
-    case "molten_greataxe": {
+    case "steel_greataxe": {
       price = 100;
       return price;
     }
-    case "gaia_battlehammer": {
+    case "musket_rifle": {
       price = 225;
       return price;
     }

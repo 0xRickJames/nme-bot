@@ -16,8 +16,8 @@ import { bossfight } from "./bossfight";
 import { warrior } from "./warrior";
 import { battlemage } from "./battlemage";
 import { shaman } from "./shaman";
-import { house_laristar } from "./house_laristar";
-import { full_meta_alchemist } from "./full_,meta_alchemist";
+import { the_angel } from "./the_angel";
+import { the_demon } from "./the_demon";
 
 export const CommandList: Command[] = [
   boost,
@@ -37,6 +37,6 @@ export const CommandList: Command[] = [
   warrior,
   battlemage,
   shaman,
-  house_laristar,
-  full_meta_alchemist,
+  the_angel,
+  the_demon,
 ];

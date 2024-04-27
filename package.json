@@ -14,7 +14,7 @@
     "@discordjs/rest": "^1.7.1",
     "common-tags": "^1.8.2",
     "discord-api-types": "^0.37.41",
-    "discord.js": "^14.10.2",
+    "discord.js": "^14.14.1",
     "dotenv": "^16.0.3",
     "lodash.clonedeep": "^4.5.0",
     "mongoose": "^7.1.0",

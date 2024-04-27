@@ -41,63 +41,69 @@ export abstract class Weapon extends Base {
   }
 }
 
-export class GaleShortsword extends Weapon {
-  name = "Gale Shortsword";
-  id = "gale_shortsword";
+export class SteelDagger extends Weapon {
+  name = "Steel Dagger";
+  id = "steel_dagger";
   attack = 5;
   price = 12;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/wind_weapon_rare.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/weapons/steel_dagger.png";
 }
-export class TidalSpear extends Weapon {
-  name = "Tidal Spear";
-  id = "tidal_spear";
+export class HandCrossbow extends Weapon {
+  name = "Hand Crossbow";
+  id = "hand_crossbow";
   attack = 10;
   price = 25;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/water_weapon_rare.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/weapons/hand_crossbow.png";
 }
-export class MoltenAxe extends Weapon {
-  name = "Molten Axe";
-  id = "molten_axe";
+export class SteelMace extends Weapon {
+  name = "Steel Mace";
+  id = "steel_mace";
   attack = 20;
   price = 50;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/fire_weapon_rare.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/weapons/steel_mace.png";
 }
-export class GaiaMace extends Weapon {
-  name = "Gaia Mace";
-  id = "gaia_mace";
+export class MusketPistol extends Weapon {
+  name = "Musket Pistol";
+  id = "musket_pistol";
   attack = 50;
   price = 125;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/earth_weapon_rare.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/weapons/musket_pistol.png";
 }
-export class GaleLongsword extends Weapon {
-  name = "Gale Longsword";
-  id = "gale_longsword";
+export class SteelLongsword extends Weapon {
+  name = "Steel Longsword";
+  id = "steel_longsword";
   attack = 10;
   price = 25;
   levelReq = 3;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/wind_weapon_epic.png";
+  imageUrl = "https://nme-bot-images.vercel.app/images/weapons/steel_sword.png";
 }
-export class TidalTrident extends Weapon {
-  name = "Tidal Trident";
-  id = "tidal_trident";
+export class HeavyCrossbow extends Weapon {
+  name = "Heavy Crossbow";
+  id = "heavy_crossbow";
   price = 50;
   levelReq = 3;
   attack = 20;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/water_weapon_epic.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/weapons/heavy_crossbow.png";
 }
-export class MoltenGreataxe extends Weapon {
-  name = "Molten Greataxe";
-  id = "molten_greataxe";
+export class SteelGreataxe extends Weapon {
+  name = "Steel Greataxe";
+  id = "steel_greataxe";
   attack = 40;
   price = 100;
   levelReq = 3;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/fire_weapon_epic.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/weapons/steel_greataxe.png";
 }
-export class GaiaBattlehammer extends Weapon {
-  name = "Gaia Battlehammer";
-  id = "gaia_battlehammer";
+export class MusketRifle extends Weapon {
+  name = "Musket Rifle";
+  id = "musket_rifle";
   attack = 100;
   price = 225;
   levelReq = 3;
-  imageUrl = "https://metadata.lootheroes.io/common/gear/earth_weapon_epic.png";
+  imageUrl =
+    "https://nme-bot-images.vercel.app/images/weapons/musket_rifle.png";
 }
