@@ -1,4 +1,4 @@
-# Lands of Ascension RPG Bot
+# NME RPG Bot
 
 ## Description
 
@@ -41,7 +41,7 @@ Add the bot to your Discord server and ensure that it has permissions to see and
 
 ## Commands
 
-Go to https://loa-rpg-bot-docs.vercel.app/ to view all of the RPG bot commands and how to use them
+Go to https://www.nme-bot.info/ to view all of the RPG bot commands and how to use them
 
 ## Contributing
 
