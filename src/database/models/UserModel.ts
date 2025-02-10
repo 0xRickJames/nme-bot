@@ -12,6 +12,7 @@ export interface UserInt extends Document {
   spell: string;
   battleWins: number;
   raidWins: number;
+  walletAddress?: string;
 }
 
 export const User = new Schema({
@@ -26,6 +27,7 @@ export const User = new Schema({
   spell: String,
   battleWins: Number,
   raidWins: Number,
+  walletAddress: { type: String, unique: true, sparse: true },
 });
 
 export default model<UserInt>("user", User);

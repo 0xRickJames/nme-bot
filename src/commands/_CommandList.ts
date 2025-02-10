@@ -18,6 +18,7 @@ import { battlemage } from "./battlemage";
 import { shaman } from "./shaman";
 import { the_angel } from "./the_angel";
 import { the_demon } from "./the_demon";
+import { verify_wallet } from "./verify_wallet";
 
 export const CommandList: Command[] = [
   boost,
@@ -39,4 +40,5 @@ export const CommandList: Command[] = [
   shaman,
   the_angel,
   the_demon,
+  verify_wallet,
 ];
