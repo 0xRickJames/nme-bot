@@ -115,6 +115,4 @@ app.post(
 );
 
 // ✅ Start API Server
-app.listen(PORT, () =>
-  console.log(`🚀 API running on http://localhost:${PORT}`)
-);
+app.listen(PORT, () => console.log(`🚀 API Running`));
