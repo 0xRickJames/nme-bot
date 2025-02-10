@@ -13,7 +13,7 @@ const app = express();
 const PORT = 3001;
 const DISCORD_CLIENT_ID = process.env.DISCORD_CLIENT_ID!;
 const DISCORD_CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET!;
-const REDIRECT_URI = process.env.REDIRECT_URL; // ✅ Frontend redirect URL
+const REDIRECT_URI = process.env.REDIRECT_URL!; // ✅ Frontend redirect URL
 
 // ✅ Middleware
 app.use(cors());
