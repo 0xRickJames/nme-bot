@@ -1,5 +1,10 @@
 import { SlashCommandBuilder } from "discord.js";
 import { Command } from "../interfaces/Command";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const REDIRECT_URL = process.env.REDIRECT_URL!;
 
 export const verify_wallet: Command = {
   data: new SlashCommandBuilder()
@@ -7,7 +12,7 @@ export const verify_wallet: Command = {
     .setDescription("Get a link to verify your wallet"),
   run: async (interaction) => {
     const userId = interaction.user.id;
-    const verificationLink = `http://localhost:3000/verify?user=${userId}`;
+    const verificationLink = `${REDIRECT_URL}/verify?user=${userId}`;
 
     await interaction.reply({
       content: `Click the link below to verify your wallet:\n${verificationLink}`,
