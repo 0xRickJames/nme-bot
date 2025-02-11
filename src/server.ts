@@ -18,14 +18,9 @@ const DISCORD_CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET!;
 const REDIRECT_URI = process.env.REDIRECT_URL!;
 
 // ✅ Load SSL Certificates
-const privateKey = fs.readFileSync(
-  "/etc/letsencrypt/live/api.nme-bot.info/privkey.pem",
-  "utf8"
-);
-const certificate = fs.readFileSync(
-  "/etc/letsencrypt/live/api.nme-bot.info/fullchain.pem",
-  "utf8"
-);
+const privateKey = fs.readFileSync("/home/rick/ssl/privkey.pem", "utf8");
+const certificate = fs.readFileSync("/home/rick/ssl/fullchain.pem", "utf8");
+
 const credentials = { key: privateKey, cert: certificate };
 
 // ✅ Middleware
