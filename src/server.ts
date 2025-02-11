@@ -16,7 +16,15 @@ const DISCORD_CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET!;
 const REDIRECT_URI = process.env.REDIRECT_URL!; // ✅ Frontend redirect URL
 
 // ✅ Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://discord.nme-bot.info"], // ✅ Allow only your frontend domain
+    credentials: true, // ✅ Allow cookies & authentication headers
+    methods: ["GET", "POST"], // ✅ Restrict to necessary methods
+    allowedHeaders: ["Content-Type", "Authorization"], // ✅ Allow necessary headers
+  })
+);
+
 app.use(bodyParser.json());
 
 // ✅ MongoDB Connection
