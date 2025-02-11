@@ -18,8 +18,8 @@ const DISCORD_CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET!;
 const REDIRECT_URI = process.env.REDIRECT_URL!;
 
 // ✅ Load SSL Certificates
-const privateKeyPath = "/etc/ssl/nme-bot/privkey.pem";
-const certificatePath = "/etc/ssl/nme-bot/fullchain.pem";
+const privateKeyPath = "/home/rick/ssl/privkey.pem";
+const certificatePath = "/home/rick/ssl/fullchain.pem";
 
 if (!fs.existsSync(privateKeyPath) || !fs.existsSync(certificatePath)) {
   console.error("❌ SSL Certificates missing!");
