@@ -18,12 +18,18 @@ const REDIRECT_URI = process.env.REDIRECT_URL!; // ✅ Frontend redirect URL
 // ✅ Middleware
 app.use(
   cors({
-    origin: ["https://discord.nme-bot.info"], // ✅ Allow only your frontend domain
-    credentials: true, // ✅ Allow cookies & authentication headers
-    methods: ["GET", "POST"], // ✅ Restrict to necessary methods
-    allowedHeaders: ["Content-Type", "Authorization"], // ✅ Allow necessary headers
+    origin: "https://discord.nme-bot.info", // ✅ Allow your frontend
+    credentials: true,
+    methods: ["GET", "POST", "OPTIONS"], // ✅ Ensure OPTIONS is allowed
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+app.options("*", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "https://discord.nme-bot.info");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.status(200).send();
+});
 
 app.use(bodyParser.json());
 
